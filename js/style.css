@@ -1,0 +1,17 @@
+.circle {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: silver;
+}
+
+#trafficlight {
+    width: 120px;
+    height: 340px; 
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: black;
+}

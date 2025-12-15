@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Game</title>
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .image-button img {
+            width: 100px;
+            height: 100px;
+        }
+        
+        table {
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rock Paper Scissors Game</h1>
+    
+    <div id="resultTitle"></div>
+    
+    <div id="gameLog">Make your move!</div>
+
+    <div class="image-container">
+        <button id="rockBtn" onclick="playerMove('rock')" class="image-button">
+            <img src="C:\Users\Тимур\Documents\parbi\portfolio\js\rock.png" alt="rock">
+        </button>
+
+        <button id="paperBtn" onclick="playerMove('paper')" class="image-button">
+            <img src="C:\Users\Тимур\Documents\parbi\portfolio\js\paper.jpg" alt="paper">
+        </button>
+
+        <button id="scissorsBtn" onclick="playerMove('scissors')" class="image-button">
+            <img src="C:\Users\Тимур\Documents\parbi\portfolio\js\scissors.jpg" alt="scissors">
+        </button>
+    </div>
+    
+    <h3 id="totalPlays">Total plays: 0</h3>
+ 
+    <table>
+        <tr>
+            <th>Wins</th>
+            <th>Draws</th>
+            <th>Loses</th>
+        </tr>
+        <tr>
+            <td id="winsCell">0</td>
+            <td id="drawsCell">0</td>
+            <td id="losesCell">0</td>
+        </tr>
+        <tr>
+            <td id="winsPercentCell">0%</td>
+            <td id="drawsPercentCell">0%</td>
+            <td id="losesPercentCell">0%</td>
+        </tr>
+    </table>
+    
+    <table style="margin-top: 30px;">
+        <tr>
+            <th>Choice</th>
+            <th>Player</th>
+            <th>Computer</th>
+        </tr>
+        <tr>
+            <td>Rock</td>
+            <td id="playerRockCount">0</td>
+            <td id="computerRockCount">0</td>
+        </tr>
+        <tr>
+            <td>Paper</td>
+            <td id="playerPaperCount">0</td>
+            <td id="computerPaperCount">0</td>
+        </tr>
+        <tr>
+            <td>Scissors</td>
+            <td id="playerScissorsCount">0</td>
+            <td id="computerScissorsCount">0</td>
+        </tr>
+    </table>
+
+    <script src="C:\Users\Тимур\Documents\parbi\portfolio\js\RSP.js"></script>
+</body>
+</html>
